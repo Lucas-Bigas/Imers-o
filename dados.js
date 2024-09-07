@@ -1,20 +1,50 @@
 let dados = [
     {
-        titulo: "QA",
-        descricao: "O QA atua como um defensor do usuário, identificando e corrigindo bugs, falhas e inconsistências que possam afetar a experiência do usuário. Além disso, ele contribui para a melhoria contínua dos processos de desenvolvimento, garantindo que o software seja entregue com alta qualidade e dentro dos prazos estabelecidos. Em resumo, o profissional de QA é o guardião da qualidade, assegurando que o software funcione como esperado e atenda às necessidades dos usuários.",
-        link:"https://pt.wikipedia.org/wiki/Garantia_da_qualidade",
-        tags: "aaa"
+        titulo: "Paris",
+        descricao: "Principais passeios pelos pontos turísticos de Paris.<br>Quem visita Paris dificilmente sai da cidade sem fazer ao menos um passeio pelos pontos turísticos. E nem há motivo para ir contra isso. Há opções de passeios em Paris que são incríveis e por isso valem o investimento.<br><br>Confira os passeios mais populares entre os turistas que visitam Paris e garanta a compra com pagamento em real, parcelado e sem IOF.<br><br><b>Passeios mais populares:</b><br>- Passeio de barco pelo Rio Sena<br>- Ônibus Big Bus Hop-on Hop-off<br>- Ingresso do 3º andar da Torre Eiffel<br>- Ingresso do 2º andar da Torre Eiffel<br>- Visita guiada + ingresso do Museu do Louvre<br>- Tour para o Palácio de Versalhes<br>- Ingresso da Disney Paris<br>- Ingresso do Arco do Triunfo<br>- Mirante do 2º andar da Torre Eiffel + Cruzeiro pelo Sena<br>- Tour por Paris + passeios de barco + ingresso da Torre Eiffel",
+        link: "https://guia.melhoresdestinos.com.br/paris-franca.html",
+        tags: "paris, Torre Eiffel"
     },
     {
-        titulo: "Desenvolvimento",
-        descricao: "O profissional de desenvolvimento é responsável por criar e manter o código-fonte de softwares. Ele utiliza linguagens de programação para transformar requisitos de negócio em soluções tecnológicas. Seus conhecimentos em lógica de programação, estruturas de dados e algoritmos são fundamentais para construir aplicações eficientes e robustas.",
-        link:"https://www.google.com/search/desenvolvimento+de+software",
-        tags: "bbb"
+        titulo: "Roma",
+        descricao: "A Cidade Eterna te espera! Descubra a história milenar de Roma, desde o Coliseu até a   Fontana di Trevi. Passeie pelas ruas charmosas e deguste a deliciosa culinária italiana.  <br><br><b>Passeios imperdíveis:</b><br>- Coliseu<br>- Fórum Romano<br>- Vaticano<br>- Fontana di    Trevi<br>- Pantheon",
+        link: "https://guia.melhoresdestinos.com.br/roma-italia.html",
+        tags: "roma, italia, historia, cultura"
     },
     {
-        titulo: "Banco de Dados",
-        descricao: "O profissional de banco de dados é responsável por projetar, implementar e gerenciar sistemas de banco de dados. Ele trabalha com o armazenamento, organização e recuperação de dados, garantindo a integridade e a segurança da informação. Seus conhecimentos em SQL e modelagem de dados são essenciais para otimizar o desempenho e a disponibilidade dos sistemas.",
-        link:"https://pt.wikipedia.org/wiki/Banco_de_dados",
-        tags: "ccc"
-    }
+        titulo: "Nova York",
+        descricao: "A cidade que nunca dorme! Explore os arranha-céus de Manhattan, visite a Times Square,  Central Park e a Estátua da Liberdade. Viva a experiência nova-iorquina em sua plenitude.    <br><br><b>Atrações imperdíveis:</b><br>- Times Square<br>- Central Park<br>- Estátua da   Liberdade<br>- Empire State Building<br>- Broadway",
+        link: "https://guia.melhoresdestinos.com.br/nova-york-estados-unidos.html",
+        tags: "nova york, estados unidos, cidade grande, cultura"
+    },  
+    {
+        titulo: "Tóquio",
+        descricao: "Uma mistura única de tradição e modernidade. Descubra a cultura pop japonesa, os    templos budistas, os distritos comerciais e a deliciosa culinária. <br><br><b>Atrações     imperdíveis:</b><br>- Shibuya Crossing<br>- Templo Sensō-ji<br>- Mercado de peixe de Tsukiji<br>-   Torre de Tóquio",
+        link: "https://guia.melhoresdestinos.com.br/tokio-japao.html",
+        tags: "tokio, japao, cultura japonesa, tecnologia"
+    },
+    {
+        titulo: "Barcelona",
+        descricao: "A cidade de Gaudí te espera! Explore a arquitetura única, as praias, a vida noturna e   a culinária mediterrânea. <br><br><b>Atrações imperdíveis:</b><br>- Sagrada Família<br>- Park     Güell<br>- La Rambla<br>- Camp Nou",
+        link: "https://guia.melhoresdestinos.com.br/barcelona-espanha.html",
+        tags: "barcelona, espanha, gaudi, arquitetura"
+    },
+    {
+        titulo: "Londres",
+        descricao: "A capital da Inglaterra oferece uma rica história, cultura e uma variedade de atrações para todos os gostos. <br><br><b>Atrações imperdíveis:</b><br>- Big Ben<br>- Palácio de Buckingham<br>- Museu Britânico<br>- London Eye",
+        link: "https://guia.melhoresdestinos.com.br/londres-inglaterra.html",
+        tags: "londres, inglaterra, historia, cultura"
+      },
+      {
+        titulo: "Dubai",
+        descricao: "Luxo, modernidade e tradição se encontram em Dubai. Descubra arranha-céus imponentes, ilhas artificiais e uma cultura fascinante. <br><br><b>Atrações imperdíveis:</b><br>- Burj Khalifa<br>- Ilhas Palm Jumeirah<br>- Souks de Dubai<br>- Desert Safari",
+        link: "https://guia.melhoresdestinos.com.br/dubai-emirados-arabes-unidos.html",
+        tags: "dubai, eua, luxo, modernidade"
+      },
+      {
+        titulo: "Sydney",
+        descricao: "Uma cidade vibrante com praias paradisíacas, ópera mundialmente famosa e uma natureza exuberante. <br><br><b>Atrações imperdíveis:</b><br>- Opera de Sydney<br>- Bondi Beach<br>- Porto de Sydney<br>- Blue Mountains",
+        link: "https://guia.melhoresdestinos.com.br/sydney-australia.html",
+        tags: "sydney, australia, praia, natureza"
+      }
 ];

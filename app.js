@@ -12,11 +12,6 @@ function pesquisar(){
 
     campoPesquisa = campoPesquisa.toLowerCase()
 
-    // if (campoPesquisa == "") {
-    //     section.innerHTML = "<p>Ops! Ainda não temos esse pedacinho. Tente outro!</p>"
-    //     return
-    // }
-
     //Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
     let titulo = "";
