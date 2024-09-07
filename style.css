@@ -7,8 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
-    background-attachment: fixed;
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte padrão */
     background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -21,10 +20,12 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    font-size: 3.5rem; /* Tamanho da fonte */
+    color:blanchedalmond; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra preta */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    
 }
 
 /* Estiliza as seções da página */
@@ -66,12 +67,21 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
+    width: 65rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    overflow-y:auto; /* Adiciona rolagem vertical se necessário */
+    margin-top:auto; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+}
+
+.mensagem-erro {
+    background-color: navajowhite;
+    font-size: 1.5rem;
+    color: #000808;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Estiliza cada item de resultado */
@@ -86,18 +96,27 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #0e55be; /* Cor do texto */
+    display: flex; /* Transforma o container em um flex container */
+    align-items: center; /* Alinha os itens verticalmente no centro */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: #be1c10; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.item-resultado img {
+    height: 300px;;  /* Mantém a proporção da imagem */
+    width: 200px; /* Define a largura da imagem */
+    margin-right: 20px; /* Adiciona um espaço à direita da imagem */
+    float: left;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -113,7 +132,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position:fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }

@@ -3,11 +3,10 @@ function pesquisar(){
     //console.log(section);
     
     let campoPesquisa = document.getElementById("campo-pesquisa").value
-    console.log(campoPesquisa);
 
     if (!campoPesquisa) {
-        section.innerHTML = "<p>Ops! O campo precisar ser preenchido com um destino!</p>"
-        return
+        section.innerHTML = "<p class='mensagem-erro'>Ops! O campo precisar ser preenchido com um destino!</p>";
+        return;
     }
 
     campoPesquisa = campoPesquisa.toLowerCase()
@@ -16,20 +15,22 @@ function pesquisar(){
     let resultados = "";
     let titulo = "";
     let descricao = "";
+    let img = ""
     
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase()
         descricao = dado.descricao.toLowerCase()
         tags = dado.tags.toLowerCase()
+        img = dado.img
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)){
             //Cria um novo elemento
             resultados += `
             <div class="item-resultado">
+                <img src=${dado.img}
                 <h2>
                     <a href="#" target="_blank">${dado.titulo}</a>
-                </h2>
-                <p class="descricao-meta">${dado.descricao}
-                </p>
+                </h2>                  
+                <p class="descricao-meta">${dado.descricao}</p>
                 <a href=${dado.link} target="_blank">Mais Informações</a>
             </div>
         `;
@@ -37,7 +38,7 @@ function pesquisar(){
     }
 
     if (!resultados) {
-        section.innerHTML = "<p>Ops! Ainda não temos esse pedacinho!</p>"
+        section.innerHTML = "<p class='mensagem-erro'> Ops! Ainda não temos esse pedacinho!</p>"
         return
     }
     section.innerHTML = resultados
