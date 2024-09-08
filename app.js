@@ -1,4 +1,14 @@
 function pesquisar(){
+
+    const loading = document.getElementById('loading');
+    loading.classList.remove('hidden');
+  
+    setTimeout(() => {
+      loading.classList.add('hidden');
+      // Aqui você mostraria os resultados da pesquisa
+      console.log('Resultados da pesquisa');
+    }, 2000);
+
     let section = document.getElementById("resultados-pesquisa")
     //console.log(section);
     
@@ -43,4 +53,3 @@ function pesquisar(){
     }
     section.innerHTML = resultados
 }
-
